@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Valtion.Core.Utilities.Exceptions.StringExceptions.StringNullReferenceException
 {
     public class StringNullReferenceException : Exception
-    { 
-
+    {
+        public StringNullReferenceException() : base() { }
     }
 }
