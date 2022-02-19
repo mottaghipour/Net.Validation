@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valtion.Tests", "tests\Valt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valtion.Core", "src\Valtion.Core\Valtion.Core.csproj", "{34A3064F-CC86-4CEF-96DD-2D29D4EBC698}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valtion.Core.Tests", "tests\Valtion.Core.Tests\Valtion.Core.Tests.csproj", "{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{34A3064F-CC86-4CEF-96DD-2D29D4EBC698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A3064F-CC86-4CEF-96DD-2D29D4EBC698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A3064F-CC86-4CEF-96DD-2D29D4EBC698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{AD22E0CE-2FEF-437B-8ED4-5D04938A6822} = {59D5AA99-3CDD-48E1-819A-69021708A5C3}
 		{EEF0DA87-D57D-4A0D-968E-2605465805E9} = {57352959-2836-42B5-A667-D2A079983E42}
 		{34A3064F-CC86-4CEF-96DD-2D29D4EBC698} = {59D5AA99-3CDD-48E1-819A-69021708A5C3}
+		{1BF6200A-CE46-4E43-A9C8-CC9AEFE63A22} = {57352959-2836-42B5-A667-D2A079983E42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18D82147-DB93-40FD-A53E-731639F954DE}
