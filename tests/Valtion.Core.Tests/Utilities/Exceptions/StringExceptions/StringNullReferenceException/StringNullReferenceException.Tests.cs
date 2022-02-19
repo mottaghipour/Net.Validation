@@ -16,6 +16,16 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             Action Throw = () => throw new StringNullReferenceException();
 
             Assert.Throws<StringNullReferenceException>(Throw);
+        }        
+        
+        [Fact]
+        public void Throw_StringNullReferenceException_With_Message()
+        {
+            string message = "String null reference exception occurred;";
+
+            Action Throw = () => throw new StringNullReferenceException();
+
+            Assert.Throws<StringNullReferenceException>(Throw);
         }
     }
 }
