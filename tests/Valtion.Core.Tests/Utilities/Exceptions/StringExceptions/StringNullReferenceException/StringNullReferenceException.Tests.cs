@@ -44,5 +44,13 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
                 Assert.Throws<StringNullReferenceException>(Throw);
             }
         }
+
+        [Fact]
+        public void ThrowMethod_StringNullReferenceException_Without_Parameters()
+        {
+            Action Throw = () => StringNullReferenceException.Throw();
+
+            Assert.Throws<StringNullReferenceException>(Throw);
+        }
     }
 }
