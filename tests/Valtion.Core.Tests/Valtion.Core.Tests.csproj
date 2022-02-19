@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Utilities\Exceptions\StringExceptions\" />
+    <Folder Include="Utilities\Exceptions\StringExceptions\StringNullReferenceException\" />
   </ItemGroup>
 
 </Project>
