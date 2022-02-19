@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Utilities\Exceptions\" />
+    <Folder Include="Utilities\Exceptions\StringExceptions\" />
   </ItemGroup>
 
 </Project>
