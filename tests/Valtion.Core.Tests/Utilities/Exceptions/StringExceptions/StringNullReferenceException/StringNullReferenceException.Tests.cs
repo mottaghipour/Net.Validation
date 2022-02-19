@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-
 using Valtion.Core.Utilities.Exceptions.StringExceptions;
 
 namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
