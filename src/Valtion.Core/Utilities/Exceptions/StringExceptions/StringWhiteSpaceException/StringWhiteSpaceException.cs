@@ -8,6 +8,9 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
     public class StringWhiteSpaceException : Exception
     {
+        /// <summary>
+        /// Contractor <see cref="StringWhiteSpaceException"/> without parameters
+        /// </summary>
         public StringWhiteSpaceException() : base() { }
     }
 }
