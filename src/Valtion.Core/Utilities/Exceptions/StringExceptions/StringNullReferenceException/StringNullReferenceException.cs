@@ -44,5 +44,10 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         {
             throw new StringNullReferenceException(message);
         }
+
+        public static void Throw(string message, Exception innerException)
+        {
+            throw new StringNullReferenceException(message, innerException);
+        }
     }
 }
