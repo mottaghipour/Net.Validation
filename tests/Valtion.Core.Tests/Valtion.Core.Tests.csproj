@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\src\Valtion.Core\Valtion.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
 </Project>
