@@ -23,7 +23,7 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         {
             string message = "String null reference exception occurred;";
 
-            Action Throw = () => throw new StringNullReferenceException();
+            Action Throw = () => throw new StringNullReferenceException(message);
 
             Assert.Throws<StringNullReferenceException>(Throw);
         }
