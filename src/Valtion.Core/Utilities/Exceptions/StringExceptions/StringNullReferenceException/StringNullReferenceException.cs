@@ -8,6 +8,9 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
     public class StringNullReferenceException : Exception
     {
+        /// <summary>
+        /// Contractor <see cref="StringNullReferenceException"/> without parameters
+        /// </summary>
         public StringNullReferenceException() : base() { }
     }
 }
