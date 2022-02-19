@@ -19,6 +19,11 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// <param name="Message"></param>
         public StringNullReferenceException(string message) : base(message) { }
 
+        /// <summary>
+        /// Contractor <see cref="StringNullReferenceException"/> with message and inner exception
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="innerException"></param>
         public StringNullReferenceException(string message, Exception innerException) : base(message, innerException) { }
     }
 }
