@@ -14,13 +14,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         public StringNullReferenceException() : base() { }
 
         /// <summary>
-        /// Contractor <see cref="StringNullReferenceException"/> with message
+        /// Contractor <see cref="StringNullReferenceException"/> with <paramref name="message"/>
         /// </summary>
         /// <param name="Message"></param>
         public StringNullReferenceException(string message) : base(message) { }
 
         /// <summary>
-        /// Contractor <see cref="StringNullReferenceException"/> with message and inner exception
+        /// Contractor <see cref="StringNullReferenceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>
