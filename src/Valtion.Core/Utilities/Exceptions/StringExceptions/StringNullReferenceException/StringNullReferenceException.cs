@@ -35,6 +35,11 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
             throw new StringNullReferenceException();
         }
 
+        /// <summary>
+        /// Throw <see cref="StringNullReferenceException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <exception cref="StringNullReferenceException"></exception>
         public static void Throw(string message)
         {
             throw new StringNullReferenceException(message);
