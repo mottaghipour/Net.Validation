@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Valtion.Core.Utilities.Exceptions.StringExceptions.StringNullReferenceException
+namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
     public class StringNullReferenceException : Exception
     {
