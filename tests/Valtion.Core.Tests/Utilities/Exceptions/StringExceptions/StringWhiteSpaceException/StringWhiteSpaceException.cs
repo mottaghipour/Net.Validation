@@ -10,6 +10,12 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
 {
     public class StringWhiteSpaceException_Tests
     {
+        [Fact]
+        public void Throw_StringWhiteSpaceException_Without_Parameters()
+        {
+            Action Throw = () => throw new StringWhiteSpaceException();
 
+            Assert.Throws<StringNullReferenceException>(Throw);
+        }
     }
 }
