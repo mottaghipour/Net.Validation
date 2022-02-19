@@ -13,6 +13,10 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// </summary>
         public StringWhiteSpaceException() : base() { }
 
+        /// <summary>
+        /// Contractor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
         public StringWhiteSpaceException(string message) : base(message) { }
     }
 }
