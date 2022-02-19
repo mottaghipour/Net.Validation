@@ -13,6 +13,10 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// </summary>
         public StringNullReferenceException() : base() { }
 
+        /// <summary>
+        /// Contractor <see cref="StringNullReferenceException"/> with message
+        /// </summary>
+        /// <param name="Message"></param>
         public StringNullReferenceException(string Message) : base(Message) { }
     }
 }
