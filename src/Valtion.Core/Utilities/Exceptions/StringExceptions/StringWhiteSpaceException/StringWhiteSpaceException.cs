@@ -8,6 +8,6 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
     public class StringWhiteSpaceException : Exception
     {
-
+        public StringWhiteSpaceException() : base() { }
     }
 }
