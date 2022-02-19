@@ -45,6 +45,12 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
             throw new StringNullReferenceException(message);
         }
 
+        /// <summary>
+        /// Throw <see cref="StringNullReferenceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="innerException"></param>
+        /// <exception cref="StringNullReferenceException"></exception>
         public static void Throw(string message, Exception innerException)
         {
             throw new StringNullReferenceException(message, innerException);
