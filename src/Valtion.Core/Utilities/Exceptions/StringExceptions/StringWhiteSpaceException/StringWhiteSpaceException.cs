@@ -34,5 +34,15 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         {
             throw new StringWhiteSpaceException();
         }
+
+        /// <summary>
+        /// Throw <see cref="StringWhiteSpaceException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <exception cref="StringWhiteSpaceException"></exception>
+        public static void Throw(string message)
+        {
+            throw new StringWhiteSpaceException(message);
+        }
     }
 }
