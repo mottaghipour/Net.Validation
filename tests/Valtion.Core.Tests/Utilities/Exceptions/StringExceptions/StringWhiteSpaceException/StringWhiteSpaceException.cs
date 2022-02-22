@@ -56,11 +56,11 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void ThrowMethod_StringWhiteSpaceException_With_Message()
         {
-            //string message = "String white space exception occurred;";
+            string message = "String white space exception occurred;";
 
-            //Action Throw = () => StringWhiteSpaceException.Throw(message);
+            Action Throw = () => StringWhiteSpaceException.Throw(message);
 
-            //Assert.Throws<StringWhiteSpaceException>(Throw);
+            Assert.Throws<StringWhiteSpaceException>(Throw);
         }
     }
 }
