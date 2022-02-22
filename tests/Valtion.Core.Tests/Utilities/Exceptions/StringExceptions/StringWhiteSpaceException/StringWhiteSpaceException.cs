@@ -37,11 +37,11 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             }
             catch (StringWhiteSpaceException innerException)
             {
-                //string message = "String white space exception occurred;";
+                string message = "String white space exception occurred;";
 
-                //Action Throw = () => throw new StringWhiteSpaceException(message, innerException);
+                Action Throw = () => throw new StringWhiteSpaceException(message, innerException);
 
-                //Assert.Throws<StringWhiteSpaceException>(Throw);
+                Assert.Throws<StringWhiteSpaceException>(Throw);
             }
         }
     }
