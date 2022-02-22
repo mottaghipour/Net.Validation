@@ -18,5 +18,12 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// </summary>
         /// <param name="message"></param>
         public StringWhiteSpaceException(string message) : base(message) { }
+
+        /// <summary>
+        /// Contractor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="innerException"></param>
+        public StringWhiteSpaceException(string message, Exception innerException) : base(message, innerException) { }
     }
 }
