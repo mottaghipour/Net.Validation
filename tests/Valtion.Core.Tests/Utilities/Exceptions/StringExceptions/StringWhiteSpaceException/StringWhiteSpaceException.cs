@@ -44,5 +44,13 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
                 Assert.Throws<StringWhiteSpaceException>(Throw);
             }
         }
+
+        [Fact]
+        public void ThrowMethod_StringWhiteSpaceException_Without_Parameters()
+        {
+            //Action Throw = () => StringWhiteSpaceException.Throw();
+
+            //Assert.Throws<StringWhiteSpaceException>(Throw);
+        }
     }
 }
