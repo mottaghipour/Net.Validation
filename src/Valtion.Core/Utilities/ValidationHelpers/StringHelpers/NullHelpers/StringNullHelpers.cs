@@ -9,7 +9,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
 {
     public static class StringNullHelpers
     {
-        public static string ShouldBeNull(this string value)
+        public static string ShouldNotBeNull(this string value)
         {
             if (value == null)
                 StringNullReferenceException.Throw();
