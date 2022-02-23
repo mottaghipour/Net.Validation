@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers.NullHelpers
+namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 {
     public class StringNullHelpers_Tests
     {
