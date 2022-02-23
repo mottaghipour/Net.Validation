@@ -19,6 +19,16 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
             string result = value.ShouldNotBeNull();
 
             Assert.Equal(value, result);
+        }        
+        
+        [Fact]
+        public void String_ShouldNotBeNull_InValid()
+        {
+            string? value = null;
+
+            Action Throw = () => value.ShouldNotBeNull();
+
+            Assert.Throws<StringNullReferenceException>(Throw);
         }
     }
 }
