@@ -9,6 +9,12 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
 {
     public static class StringNullHelpers
     {
+        /// <summary>
+        /// String should not be <see langword="null"/> helper
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>String <paramref name="value"/></returns>
+        /// <exception cref="StringNullReferenceException"></exception>
         public static string ShouldNotBeNull(this string value)
         {
             if (value == null)
