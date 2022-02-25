@@ -34,5 +34,15 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         {
             throw new StringFullReferenceException();
         }
+
+        /// <summary>
+        /// Throw <see cref="StringFullReferenceException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <exception cref="StringFullReferenceException"></exception>
+        public static void Throw(string message)
+        {
+            throw new StringFullReferenceException(message);
+        }
     }
 }
