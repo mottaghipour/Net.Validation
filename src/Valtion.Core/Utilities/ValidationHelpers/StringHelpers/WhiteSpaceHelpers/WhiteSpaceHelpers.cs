@@ -10,7 +10,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
     public static class WhiteSpaceHelpers
     {
         /// <summary>
-        /// String should not be white space helper
+        /// Helper => String should not be white space
         /// </summary>
         /// <param name="value"></param>
         /// <param name="message"></param>
