@@ -18,5 +18,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// </summary>
         /// <param name="Message"></param>
         public StringFullReferenceException(string message) : base(message) { }
+
+        /// <summary>
+        /// Contractor <see cref="StringFullReferenceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="innerException"></param>
+        public StringFullReferenceException(string message, Exception innerException) : base(message, innerException) { }
+
     }
 }
