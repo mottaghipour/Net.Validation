@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
-    public class StringFullReferenceException
+    public class StringFullReferenceException : Exception
     {
-
+        /// <summary>
+        /// Contractor <see cref="StringFullReferenceException"/> without parameters
+        /// </summary>
+        public StringFullReferenceException() : base() { }
     }
 }
