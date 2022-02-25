@@ -24,8 +24,4 @@
     <ProjectReference Include="..\..\src\Valtion.Core\Valtion.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Utilities\ValidationHelpers\StringHelpers\StringNullHelpers_Tests\" />
-  </ItemGroup>
-
 </Project>
