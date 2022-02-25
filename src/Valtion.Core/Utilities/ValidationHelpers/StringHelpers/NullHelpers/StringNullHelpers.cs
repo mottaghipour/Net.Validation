@@ -15,7 +15,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         /// <param name="value"></param>
         /// <returns>String <paramref name="value"/></returns>
         /// <exception cref="StringNullReferenceException"></exception>
-        public static string ShouldNotBeNull(this string value)
+        public static string ShouldNotBeNull(this string value, string message = "String null reference exception occurred;")
         {
             if (value == null)
                 StringNullReferenceException.Throw();
