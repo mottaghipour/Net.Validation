@@ -13,7 +13,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         /// String should be <see langword="null"/> helper
         /// </summary>
         /// <param name="value"></param>
-        /// <returns>String <paramref name="value"/></returns>
+        /// <returns><see cref="string"/> <paramref name="value"/></returns>
         /// <exception cref="StringFullReferenceException"></exception>
         public static string ShouldBeNull(this string value, string message = "String full reference exception occurred;")
         {
@@ -27,7 +27,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         /// String should not be <see langword="null"/> helper
         /// </summary>
         /// <param name="value"></param>
-        /// <returns>String <paramref name="value"/></returns>
+        /// <returns><see cref="string"/> <paramref name="value"/></returns>
         /// <exception cref="StringNullReferenceException"></exception>
         public static string ShouldNotBeNull(this string value, string message = "String null reference exception occurred;")
         {
