@@ -51,7 +51,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void String_ShouldBeNull_Valid()
         {
-            string value = "Value";
+            string? value = null;
 
             string result = value.ShouldBeNull();
 
