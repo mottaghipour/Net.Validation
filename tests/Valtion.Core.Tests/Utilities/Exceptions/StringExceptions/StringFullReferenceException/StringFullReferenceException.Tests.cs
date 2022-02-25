@@ -13,9 +13,9 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void Throw_StringFullReferenceException_Without_Parameters()
         {
-            //Action Throw = () => throw new StringFullReferenceException();
+            Action Throw = () => throw new StringFullReferenceException();
 
-            //Assert.Throws<StringFullReferenceException>(Throw);
+            Assert.Throws<StringFullReferenceException>(Throw);
         }
     }
 }
