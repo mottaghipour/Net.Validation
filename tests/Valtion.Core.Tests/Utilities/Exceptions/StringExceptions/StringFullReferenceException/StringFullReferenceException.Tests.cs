@@ -56,11 +56,11 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void ThrowMethod_StringFullReferenceException_With_Message()
         {
-            //string message = "String full reference exception occurred;";
+            string message = "String full reference exception occurred;";
 
-            //Action Throw = () => StringFullReferenceException.Throw(message);
+            Action Throw = () => StringFullReferenceException.Throw(message);
 
-            //Assert.Throws<StringFullReferenceException>(Throw);
+            Assert.Throws<StringFullReferenceException>(Throw);
         }
     }
 }
