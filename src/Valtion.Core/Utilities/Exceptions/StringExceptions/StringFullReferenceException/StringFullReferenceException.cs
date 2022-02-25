@@ -26,5 +26,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// <param name="innerException"></param>
         public StringFullReferenceException(string message, Exception innerException) : base(message, innerException) { }
 
+        /// <summary>
+        /// Throw <see cref="StringFullReferenceException"/> without parameters
+        /// </summary>
+        /// <exception cref="StringFullReferenceException"></exception>
+        public static void Throw()
+        {
+            throw new StringFullReferenceException();
+        }
     }
 }
