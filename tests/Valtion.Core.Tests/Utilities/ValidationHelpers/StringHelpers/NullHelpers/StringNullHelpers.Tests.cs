@@ -57,5 +57,15 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
             Assert.Equal(value, result);
         }
+
+        [Fact]
+        public void String_ShouldBeNull_InValid()
+        {
+            string? value = "value";
+
+            Action Throw = () => value.ShouldBeNull();
+
+            Assert.Throws<StringFullReferenceException>(Throw);
+        }
     }
 }
