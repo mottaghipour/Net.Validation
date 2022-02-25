@@ -18,7 +18,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         public static string ShouldNotBeNull(this string value, string message = "String null reference exception occurred;")
         {
             if (value == null)
-                StringNullReferenceException.Throw();
+                StringNullReferenceException.Throw(message);
 
             return value;
         }
