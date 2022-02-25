@@ -29,6 +29,23 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
             Action Throw = () => value.ShouldNotBeNull();
 
             Assert.Throws<StringNullReferenceException>(Throw);
+        }        
+        
+        [Fact]
+        public void String_ShouldNotBeNull_InValid_With_CustomMessage()
+        {
+            string message = "String is null";
+
+            try
+            {
+                string? value = null;
+
+                value.ShouldNotBeNull(message);
+            }
+            catch (StringNullReferenceException exception)
+            {
+                Assert.Equal(message, exception.Message);
+            }
         }
     }
 }
