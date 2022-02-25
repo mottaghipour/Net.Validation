@@ -10,7 +10,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
     public static class StringNullHelpers
     {
         /// <summary>
-        /// String should be <see langword="null"/> helper
+        /// Helper => String should be <see langword="null"/>
         /// </summary>
         /// <param name="value"></param>
         /// <returns><see cref="string"/> <paramref name="value"/></returns>
@@ -24,7 +24,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         }
 
         /// <summary>
-        /// String should not be <see langword="null"/> helper
+        /// Helper => String should not be <see langword="null"/>
         /// </summary>
         /// <param name="value"></param>
         /// <returns><see cref="string"/> <paramref name="value"/></returns>
