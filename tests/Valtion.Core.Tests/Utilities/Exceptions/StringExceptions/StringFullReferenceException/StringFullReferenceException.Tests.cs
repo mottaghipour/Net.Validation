@@ -72,11 +72,11 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             }
             catch (StringFullReferenceException innerException)
             {
-                //string message = "String full reference exception occurred;";
+                string message = "String full reference exception occurred;";
 
-                //Action Throw = () => StringFullReferenceException.Throw(message, innerException);
+                Action Throw = () => StringFullReferenceException.Throw(message, innerException);
 
-                //Assert.Throws<StringFullReferenceException>(Throw);
+                Assert.Throws<StringFullReferenceException>(Throw);
             }
         }
     }
