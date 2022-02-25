@@ -22,5 +22,19 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
 
             return value;
         }
+
+        /// <summary>
+        /// String should be <see langword="null"/> helper
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>String <paramref name="value"/></returns>
+        /// <exception cref="StringFullReferenceException"></exception>
+        public static string ShouldBeNull(this string value, string message = "String full reference exception occurred;")
+        {
+            if (value != null)
+                StringFullReferenceException.Throw(message);
+
+            return value;
+        }
     }
 }
