@@ -67,5 +67,22 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
             Assert.Throws<StringFullReferenceException>(Throw);
         }
+
+        [Fact]
+        public void String_ShouldBeNull_InValid_With_CustomMessage()
+        {
+            string message = "String is full";
+
+            try
+            {
+                string? value = null;
+
+                value.ShouldBeNull(message);
+            }
+            catch (StringNullReferenceException exception)
+            {
+                Assert.Equal(message, exception.Message);
+            }
+        }
     }
 }
