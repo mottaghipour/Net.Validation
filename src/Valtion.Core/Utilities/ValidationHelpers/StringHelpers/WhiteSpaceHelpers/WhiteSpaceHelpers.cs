@@ -16,7 +16,7 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         /// <param name="message"></param>
         /// <returns><see cref="string"/> <paramref name="value"/></returns>
         /// <exception cref="StringWhiteSpaceException"></exception>
-        public static string ShouldBeNotWhiteSpace(this string value, string message = "String white space exception occurred;")
+        public static string ShouldNotBeWhiteSpace(this string value, string message = "String white space exception occurred;")
         {
             value.ShouldNotBeNull();
             if (value == " ")
