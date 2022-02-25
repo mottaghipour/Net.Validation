@@ -51,11 +51,11 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void String_ShouldBeNull_Valid()
         {
-            //string value = "Value";
+            string value = "Value";
 
-            //string result = value.ShouldBeNull();
+            string result = value.ShouldBeNull();
 
-            //Assert.Equal(value, result);
+            Assert.Equal(value, result);
         }
     }
 }
