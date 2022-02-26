@@ -34,7 +34,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void String_ShouldBeWhiteSpace_InValid_With_CustomMessage()
         {
-            string message = "String is full";
+            string message = "String is not white space;";
 
             try
             {
@@ -66,6 +66,23 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
             Action Throw = () => value.ShouldNotBeWhiteSpace();
 
             Assert.Throws<StringWhiteSpaceException>(Throw);
+        }
+
+        [Fact]
+        public void String_ShouldNotBeWhiteSpace_InValid_With_CustomMessage()
+        {
+            string message = "String is white space;";
+
+            try
+            {
+                string? value = " ";
+
+                value.ShouldNotBeWhiteSpace(message);
+            }
+            catch (StringWhiteSpaceException exception)
+            {
+                Assert.Equal(message, exception.Message);
+            }
         }
     }
 }
