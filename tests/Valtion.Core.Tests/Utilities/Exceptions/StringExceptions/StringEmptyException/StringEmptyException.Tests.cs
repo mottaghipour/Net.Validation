@@ -35,7 +35,7 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //{
             //    throw new StringEmptyException();
             //}
-            //catch (StringFullReferenceException innerException)
+            //catch (StringEmptyException innerException)
             //{
             //    string message = "String empty exception occurred;";
 
@@ -62,6 +62,23 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //Action Throw = () => StringEmptyException.Throw(message);
 
             //Assert.Throws<StringEmptyException>(Throw);
+        }
+
+        [Fact]
+        public void ThrowMethod_StringEmptyException_With_MessageAndInnerException()
+        {
+            //try
+            //{
+            //    StringEmptyException.Throw();
+            //}
+            //catch (StringEmptyException innerException)
+            //{
+            //    string message = "String empty exception occurred;";
+
+            //    Action Throw = () => StringEmptyException.Throw(message, innerException);
+
+            //    Assert.Throws<StringEmptyException>(Throw);
+            //}
         }
     }
 }
