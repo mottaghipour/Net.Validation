@@ -30,5 +30,22 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
             Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
         }
+
+        [Fact]
+        public void String_ShouldBeWhiteSpace_InValid_With_CustomMessage()
+        {
+            string message = "String is full";
+
+            try
+            {
+                string? value = null;
+
+                value.ShouldBeWhiteSpace(message);
+            }
+            catch (StringIsNotWhiteSpaceException exception)
+            {
+                Assert.Equal(message, exception.Message);
+            }
+        }
     }
 }
