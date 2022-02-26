@@ -26,5 +26,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// <param name="innerException"></param>
         public StringIsNotWhiteSpaceException(string message, Exception innerException) : base(message, innerException) { }
 
+        /// <summary>
+        /// Throw <see cref="StringIsNotWhiteSpaceException"/> without parameters
+        /// </summary>
+        /// <exception cref="StringIsNotWhiteSpaceException"></exception>
+        public static void Throw()
+        {
+            throw new StringIsNotWhiteSpaceException();
+        }
     }
 }
