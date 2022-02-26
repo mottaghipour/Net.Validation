@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
-    public class StringIsNotWhiteSpaceException
+    public class StringIsNotWhiteSpaceException : Exception
     {
         /// <summary>
         /// Contractor <see cref="StringIsNotWhiteSpaceException"/> without parameters

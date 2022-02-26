@@ -13,9 +13,9 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void Throw_StringIsNotWhiteSpaceException_Without_Parameters()
         {
-            //Action Throw = () => throw new StringIsNotWhiteSpaceException();
+            Action Throw = () => throw new StringIsNotWhiteSpaceException();
 
-            //Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
+            Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
         }
 
         [Fact]
