@@ -8,6 +8,9 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
 {
     public class StringEmptyException : Exception
     {
-
+        /// <summary>
+        /// Contractor <see cref="StringEmptyException"/> without parameters
+        /// </summary>
+        public StringEmptyException() : base() { }
     }
 }
