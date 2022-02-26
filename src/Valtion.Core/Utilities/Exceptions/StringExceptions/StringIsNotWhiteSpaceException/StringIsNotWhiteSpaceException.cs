@@ -12,5 +12,11 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// Contractor <see cref="StringIsNotWhiteSpaceException"/> without parameters
         /// </summary>
         public StringIsNotWhiteSpaceException() : base() { }
+
+        /// <summary>
+        /// Contractor <see cref="StringIsNotWhiteSpaceException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="Message"></param>
+        public StringIsNotWhiteSpaceException(string message) : base(message) { }
     }
 }
