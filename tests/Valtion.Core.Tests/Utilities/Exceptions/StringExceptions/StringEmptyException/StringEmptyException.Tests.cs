@@ -44,5 +44,13 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //    Assert.Throws<StringEmptyException>(Throw);
             //}
         }
+
+        [Fact]
+        public void ThrowMethod_StringEmptyException_Without_Parameters()
+        {
+            //Action Throw = () => StringEmptyException.Throw();
+
+            //Assert.Throws<StringEmptyException>(Throw);
+        }
     }
 }
