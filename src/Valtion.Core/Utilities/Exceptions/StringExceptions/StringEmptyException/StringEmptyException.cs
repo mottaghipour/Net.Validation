@@ -12,5 +12,11 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// Contractor <see cref="StringEmptyException"/> without parameters
         /// </summary>
         public StringEmptyException() : base() { }
+
+        /// <summary>
+        /// Contractor <see cref="StringEmptyException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="Message"></param>
+        public StringEmptyException(string message) : base(message) { }
     }
 }
