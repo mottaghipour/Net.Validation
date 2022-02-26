@@ -13,72 +13,72 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void Throw_StringEmptyException_Without_Parameters()
         {
-            //Action Throw = () => throw new StringEmptyException();
+            Action Throw = () => throw new StringEmptyException();
 
-            //Assert.Throws<StringEmptyException>(Throw);
+            Assert.Throws<StringEmptyException>(Throw);
         }
 
         [Fact]
         public void Throw_StringEmptyException_With_Message()
         {
-            //string message = "String empty exception occurred;";
+            string message = "String empty exception occurred;";
 
-            //Action Throw = () => throw new StringEmptyException(message);
+            Action Throw = () => throw new StringEmptyException(message);
 
-            //Assert.Throws<StringEmptyException>(Throw);
+            Assert.Throws<StringEmptyException>(Throw);
         }
 
         [Fact]
         public void Throw_StringEmptyException_With_MessageAndInnerException()
         {
-            //try
-            //{
-            //    throw new StringEmptyException();
-            //}
-            //catch (StringEmptyException innerException)
-            //{
-            //    string message = "String empty exception occurred;";
+            try
+            {
+                throw new StringEmptyException();
+            }
+            catch (StringEmptyException innerException)
+            {
+                string message = "String empty exception occurred;";
 
-            //    Action Throw = () => throw new StringEmptyException(message, innerException);
+                Action Throw = () => throw new StringEmptyException(message, innerException);
 
-            //    Assert.Throws<StringEmptyException>(Throw);
-            //}
+                Assert.Throws<StringEmptyException>(Throw);
+            }
         }
 
         [Fact]
         public void ThrowMethod_StringEmptyException_Without_Parameters()
         {
-            //Action Throw = () => StringEmptyException.Throw();
+            Action Throw = () => StringEmptyException.Throw();
 
-            //Assert.Throws<StringEmptyException>(Throw);
+            Assert.Throws<StringEmptyException>(Throw);
         }
 
 
         [Fact]
         public void ThrowMethod_StringEmptyException_With_Message()
         {
-            //string message = "String empty exception occurred;";
+            string message = "String empty exception occurred;";
 
-            //Action Throw = () => StringEmptyException.Throw(message);
+            Action Throw = () => StringEmptyException.Throw(message);
 
-            //Assert.Throws<StringEmptyException>(Throw);
+            Assert.Throws<StringEmptyException>(Throw);
         }
 
         [Fact]
         public void ThrowMethod_StringEmptyException_With_MessageAndInnerException()
         {
-            //try
-            //{
-            //    StringEmptyException.Throw();
-            //}
-            //catch (StringEmptyException innerException)
-            //{
-            //    string message = "String empty exception occurred;";
+            try
+            {
+                StringEmptyException.Throw();
+            }
+            catch (StringEmptyException innerException)
+            {
+                string message = "String empty exception occurred;";
 
-            //    Action Throw = () => StringEmptyException.Throw(message, innerException);
+                Action Throw = () => StringEmptyException.Throw(message, innerException);
 
-            //    Assert.Throws<StringEmptyException>(Throw);
-            //}
+                Assert.Throws<StringEmptyException>(Throw);
+            }
         }
     }
 }
