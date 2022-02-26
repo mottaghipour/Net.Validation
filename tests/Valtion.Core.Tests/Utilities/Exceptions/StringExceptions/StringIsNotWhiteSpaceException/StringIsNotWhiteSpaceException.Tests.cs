@@ -21,11 +21,28 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
         [Fact]
         public void Throw_StringIsNotWhiteSpaceException_With_Message()
         {
-            // string message = "String is not white space exception occurred;";
+            //string message = "String is not white space exception occurred;";
 
             //Action Throw = () => throw new StringIsNotWhiteSpaceException(message);
 
             //Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
+        }
+
+        [Fact]
+        public void Throw_StringIsNotWhiteSpaceException_With_MessageAndInnerException()
+        {
+            //try
+            //{
+            //    throw new StringIsNotWhiteSpaceException();
+            //}
+            //catch (StringIsNotWhiteSpaceException innerException)
+            //{
+            //    string message = "String is not white space exception occurred;";
+
+            //    Action Throw = () => throw new StringIsNotWhiteSpaceException(message, innerException);
+
+            //    Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
+            //}
         }
     }
 }
