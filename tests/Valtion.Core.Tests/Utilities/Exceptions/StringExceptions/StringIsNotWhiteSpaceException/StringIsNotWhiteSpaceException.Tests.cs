@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions.
+namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
 {
     public class StringIsNotWhiteSpaceException_Tests
     {
