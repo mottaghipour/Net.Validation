@@ -44,5 +44,13 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //    Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
             //}
         }
+
+        [Fact]
+        public void ThrowMethod_StringIsNotWhiteSpaceException_Without_Parameters()
+        {
+            //Action Throw = () => StringIsNotWhiteSpaceException.Throw();
+
+            //Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
+        }
     }
 }
