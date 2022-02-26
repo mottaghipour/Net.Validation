@@ -35,5 +35,15 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         {
             throw new StringEmptyException();
         }
+
+        /// <summary>
+        /// Throw <see cref="StringEmptyException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <exception cref="StringEmptyException"></exception>
+        public static void Throw(string message)
+        {
+            throw new StringEmptyException(message);
+        }
     }
 }
