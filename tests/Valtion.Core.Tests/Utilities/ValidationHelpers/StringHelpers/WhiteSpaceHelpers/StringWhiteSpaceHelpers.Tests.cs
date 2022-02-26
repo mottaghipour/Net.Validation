@@ -47,5 +47,15 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
                 Assert.Equal(message, exception.Message);
             }
         }
+
+        [Fact]
+        public void String_ShouldNotBeWhiteSpace_Valid()
+        {
+            string? value = "String";
+
+            string result = value.ShouldNotBeWhiteSpace();
+
+            Assert.Equal(value, result);
+        }
     }
 }
