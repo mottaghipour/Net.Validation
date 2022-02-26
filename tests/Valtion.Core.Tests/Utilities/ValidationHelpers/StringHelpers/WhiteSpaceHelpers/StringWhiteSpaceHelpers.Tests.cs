@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 {
-    public class WhiteSpaceHelpers_Tests
+    public class StringWhiteSpaceHelpers_Tests
     {
         [Fact]
         public void String_ShouldBeWhiteSpace_Valid()

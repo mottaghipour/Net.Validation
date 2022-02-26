@@ -7,7 +7,7 @@ using Valtion.Core.Utilities.Exceptions.StringExceptions;
 
 namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
 {
-    public static class WhiteSpaceHelpers
+    public static class StringWhiteSpaceHelpers
     {
         /// <summary>
         /// Helper => String should be white space
