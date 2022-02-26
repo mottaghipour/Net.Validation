@@ -27,5 +27,22 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
 
             //Assert.Throws<StringEmptyException>(Throw);
         }
+
+        [Fact]
+        public void Throw_StringEmptyException_With_MessageAndInnerException()
+        {
+            //try
+            //{
+            //    throw new StringEmptyException();
+            //    StringEmptyException
+            //catch (StringFullReferenceException innerException)
+            //{
+            //    string message = "String full reference exception occurred;";
+
+            //    Action Throw = () => throw new StringEmptyException(message, innerException);
+
+            //    Assert.Throws<StringEmptyException>(Throw);
+            //}
+        }
     }
 }
