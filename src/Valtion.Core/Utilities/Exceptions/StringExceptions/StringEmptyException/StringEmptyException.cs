@@ -27,5 +27,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// <param name="innerException"></param>
         public StringEmptyException(string message, Exception innerException) : base(message, innerException) { }
 
+        /// <summary>
+        /// Throw <see cref="StringEmptyException"/> without parameters
+        /// </summary>
+        /// <exception cref="StringEmptyException"></exception>
+        public static void Throw()
+        {
+            throw new StringEmptyException();
+        }
     }
 }
