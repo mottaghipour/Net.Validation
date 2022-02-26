@@ -34,7 +34,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void String_ShouldBeNull_InValid_With_CustomMessage()
         {
-            string message = "String is full";
+            string message = "String is full;";
 
             try
             {
@@ -71,7 +71,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void String_ShouldNotBeNull_InValid_With_CustomMessage()
         {
-            string message = "String is null";
+            string message = "String is null;";
 
             try
             {
