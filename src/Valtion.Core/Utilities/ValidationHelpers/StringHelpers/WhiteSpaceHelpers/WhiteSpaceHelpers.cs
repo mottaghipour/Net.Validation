@@ -18,7 +18,6 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
         /// <exception cref="StringWhiteSpaceException"></exception>
         public static string ShouldNotBeWhiteSpace(this string value, string message = "String white space exception occurred;")
         {
-            value.ShouldNotBeNull();
             if (value == " ")
                 StringWhiteSpaceException.Throw(message);
 
