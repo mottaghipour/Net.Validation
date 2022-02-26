@@ -37,7 +37,7 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //    StringEmptyException
             //catch (StringFullReferenceException innerException)
             //{
-            //    string message = "String full reference exception occurred;";
+            //    string message = "String empty exception occurred;";
 
             //    Action Throw = () => throw new StringEmptyException(message, innerException);
 
