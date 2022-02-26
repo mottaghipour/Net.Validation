@@ -1,2 +1,2 @@
 # Valtion
-The .NET exceptions library
+The .NET validation library
