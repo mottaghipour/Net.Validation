@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validators\StringValidators\" />
+    <Folder Include="Validators\StringValidators\Required\" />
   </ItemGroup>
 
 </Project>
