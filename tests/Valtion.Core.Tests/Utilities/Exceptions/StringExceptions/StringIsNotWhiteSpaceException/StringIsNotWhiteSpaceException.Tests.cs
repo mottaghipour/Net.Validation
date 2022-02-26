@@ -62,5 +62,22 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
 
             //Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
         }
+
+        [Fact]
+        public void ThrowMethod_StringIsNotWhiteSpaceException_With_MessageAndInnerException()
+        {
+            //try
+            //{
+            //    StringIsNotWhiteSpaceException.Throw();
+            //}
+            //catch (StringIsNotWhiteSpaceException innerException)
+            //{
+            //    string message = "String is not white space exception occurred;";
+
+            //    Action Throw = () => StringIsNotWhiteSpaceException.Throw(message, innerException);
+
+            //    Assert.Throws<StringIsNotWhiteSpaceException>(Throw);
+            //}
+        }
     }
 }
