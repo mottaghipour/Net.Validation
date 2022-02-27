@@ -29,5 +29,22 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
             //Assert.Throws<StringIsNotEmptyException>(Throw);
         }
+
+        [Fact]
+        public void String_ShouldBeEmpty_InValid_With_CustomMessage()
+        {
+            //string message = "String is not empty;";
+
+            //try
+            //{
+            //    string? value = null;
+
+            //    value.ShouldBeEmpty(message);
+            //}
+            //catch (StringIsNotEmptyException exception)
+            //{
+            //    Assert.Equal(message, exception.Message);
+            //}
+        }
     }
 }
