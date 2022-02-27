@@ -44,5 +44,12 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
             //}
         }
 
+        [Fact]
+        public void ThrowMethod_StringIsNotEmptyException_Without_Parameters()
+        {
+            //Action Throw = () => StringIsNotEmptyException.Throw();
+
+            //Assert.Throws<StringIsNotEmptyException>(Throw);
+        }
     }
 }
