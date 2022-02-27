@@ -18,5 +18,13 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         /// </summary>
         /// <param name="Message"></param>
         public StringIsNotEmptyException(string message) : base(message) { }
+
+        /// <summary>
+        /// Contractor <see cref="StringIsNotEmptyException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="innerException"></param>
+        public StringIsNotEmptyException(string message, Exception innerException) : base(message, innerException) { }
+
     }
 }
