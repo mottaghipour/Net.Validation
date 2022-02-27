@@ -22,5 +22,19 @@ namespace Valtion.Core.Utilities.ValidationHelpers.StringHelpers
 
             return value;
         }
+
+        /// <summary>
+        /// Helper => String should not be empty
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns><see cref="string"/> <paramref name="value"/></returns>
+        /// <exception cref="StringEmptyException"></exception>
+        public static string ShouldNotBeEmpty(this string value, string message = "String empty exception occurred;")
+        {
+            if (value == "")
+                StringEmptyException.Throw(message);
+
+            return value;
+        }
     }
 }
