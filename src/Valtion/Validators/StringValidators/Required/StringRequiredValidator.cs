@@ -17,10 +17,11 @@ namespace Valtion.Validators.StringValidators
         /// <param name="message"></param>
         /// <returns><see cref="string"/> <paramref name="value"/></returns>
         /// <exception cref="StringNullReferenceException"></exception>
+        /// <exception cref="StringEmptyException"></exception>
         /// <exception cref="StringWhiteSpaceException"></exception>
         public static string Required(this string value, string message = "This field is required;")
         {
-            return value.ShouldNotBeNull(message).ShouldNotBeWhiteSpace(message);
+            return value.ShouldNotBeNull(message).ShouldNotBeEmpty(message).ShouldNotBeWhiteSpace(message);
         }
     }
 }
