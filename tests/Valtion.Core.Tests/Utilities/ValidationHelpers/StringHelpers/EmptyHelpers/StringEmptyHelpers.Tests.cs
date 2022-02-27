@@ -46,5 +46,15 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
             //    Assert.Equal(message, exception.Message);
             //}
         }
+
+        [Fact]
+        public void String_ShouldNotBeEmpty_Valid()
+        {
+            //string value = "value";
+
+            //string result = value.ShouldNotBeEmpty();
+
+            //Assert.Equal(value, result);
+        }
     }
 }
