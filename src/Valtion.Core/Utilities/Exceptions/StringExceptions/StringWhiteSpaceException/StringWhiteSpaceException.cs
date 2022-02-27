@@ -9,18 +9,18 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
     public class StringWhiteSpaceException : Exception
     {
         /// <summary>
-        /// Contractor <see cref="StringWhiteSpaceException"/> without parameters
+        /// Constructor <see cref="StringWhiteSpaceException"/> without parameters
         /// </summary>
         public StringWhiteSpaceException() : base() { }
 
         /// <summary>
-        /// Contractor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/>
+        /// Constructor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/>
         /// </summary>
         /// <param name="message"></param>
         public StringWhiteSpaceException(string message) : base(message) { }
 
         /// <summary>
-        /// Contractor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// Constructor <see cref="StringWhiteSpaceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>

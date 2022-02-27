@@ -9,19 +9,19 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
     public class StringEmptyException : Exception
     {
         /// <summary>
-        /// Contractor <see cref="StringEmptyException"/> without parameters
+        /// Constructor <see cref="StringEmptyException"/> without parameters
         /// </summary>
         public StringEmptyException() : base() { }
 
         /// <summary>
-        /// Contractor <see cref="StringEmptyException"/> with <paramref name="message"/>
+        /// Constructor <see cref="StringEmptyException"/> with <paramref name="message"/>
         /// </summary>
         /// <param name="Message"></param>
         public StringEmptyException(string message) : base(message) { }
 
 
         /// <summary>
-        /// Contractor <see cref="StringEmptyException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// Constructor <see cref="StringEmptyException"/> with <paramref name="message"/> and <paramref name="innerException"/>
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>

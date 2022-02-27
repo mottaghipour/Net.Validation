@@ -9,18 +9,18 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
     public class StringNullReferenceException : Exception
     {
         /// <summary>
-        /// Contractor <see cref="StringNullReferenceException"/> without parameters
+        /// Constructor <see cref="StringNullReferenceException"/> without parameters
         /// </summary>
         public StringNullReferenceException() : base() { }
 
         /// <summary>
-        /// Contractor <see cref="StringNullReferenceException"/> with <paramref name="message"/>
+        /// Constructor <see cref="StringNullReferenceException"/> with <paramref name="message"/>
         /// </summary>
         /// <param name="Message"></param>
         public StringNullReferenceException(string message) : base(message) { }
 
         /// <summary>
-        /// Contractor <see cref="StringNullReferenceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
+        /// Constructor <see cref="StringNullReferenceException"/> with <paramref name="message"/> and <paramref name="innerException"/>
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>

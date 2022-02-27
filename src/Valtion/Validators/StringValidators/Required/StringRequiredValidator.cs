@@ -21,7 +21,10 @@ namespace Valtion.Validators.StringValidators
         /// <exception cref="StringWhiteSpaceException"></exception>
         public static string Required(this string value, string message = "This field is required;")
         {
-            return value.ShouldNotBeNull(message).ShouldNotBeEmpty(message).ShouldNotBeWhiteSpace(message);
+            return value
+                .ShouldNotBeNull(message)
+                .ShouldNotBeEmpty(message)
+                .ShouldNotBeWhiteSpace(message);
         }
     }
 }
