@@ -34,5 +34,15 @@ namespace Valtion.Core.Utilities.Exceptions.StringExceptions
         {
             throw new StringIsNotEmptyException();
         }
+
+        /// <summary>
+        /// Throw <see cref="StringIsNotEmptyException"/> with <paramref name="message"/>
+        /// </summary>
+        /// <param name="message"></param>
+        /// <exception cref="StringIsNotEmptyException"></exception>
+        public static void Throw(string message)
+        {
+            throw new StringIsNotEmptyException(message);
+        }
     }
 }
