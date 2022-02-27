@@ -26,5 +26,23 @@ namespace Valtion.Core.Tests.Utilities.Exceptions.StringExceptions
 
             //Assert.Throws<StringIsNotEmptyException>(Throw);
         }
+
+        [Fact]
+        public void Throw_StringIsNotEmptyException_With_MessageAndInnerException()
+        {
+            //try
+            //{
+            //    throw new StringIsNotEmptyException();
+            //}
+            //catch (StringIsNotEmptyException innerException)
+            //{
+            //    string message = "String is not empty exception occurred;";
+
+            //    Action Throw = () => throw new StringIsNotEmptyException(message, innerException);
+
+            //    Assert.Throws<StringIsNotEmptyException>(Throw);
+            //}
+        }
+
     }
 }
