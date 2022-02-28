@@ -12,7 +12,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
     public class StringEmptyHelpers_Tests
     {
         [Fact]
-        public void String_ShouldBeEmpty_Valid()
+        public void ShouldBeEmpty_WithEmptyString_Valid()
         {
             string? value = "";
 
@@ -22,9 +22,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeEmpty_InValid()
+        public void ShouldBeEmpty_WithFullString_ThrowException()
         {
-            string? value = "value";
+            string value = "value";
 
             Action Throw = () => value.ShouldBeEmpty();
 
@@ -32,13 +32,13 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeEmpty_InValid_With_CustomMessage()
+        public void ShouldBeEmpty_WithFullString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is not empty;";
 
             try
             {
-                string? value = null;
+                string value = "value";
 
                 value.ShouldBeEmpty(message);
             }
@@ -49,7 +49,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeEmpty_Valid()
+        public void ShouldNotBeEmpty_WithFullString_Valid()
         {
             string value = "value";
 
@@ -59,9 +59,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeEmpty_InValid()
+        public void ShouldNotBeEmpty_WithEmptyString_ThrowException()
         {
-            string? value = "";
+            string value = "";
 
             Action Throw = () => value.ShouldNotBeEmpty();
 
@@ -69,13 +69,13 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeEmpty_InValid_With_CustomMessage()
+        public void ShouldNotBeEmpty_WithEmptyString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is empty;";
 
             try
             {
-                string? value = "";
+                string value = "";
 
                 value.ShouldNotBeEmpty(message);
             }

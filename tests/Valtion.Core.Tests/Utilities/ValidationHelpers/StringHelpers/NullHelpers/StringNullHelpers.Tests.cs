@@ -12,7 +12,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
     public class StringNullHelpers_Tests
     {
         [Fact]
-        public void String_ShouldBeNull_Valid()
+        public void ShouldBeNull_WithNullString_Valid()
         {
             string? value = null;
 
@@ -22,9 +22,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeNull_InValid()
+        public void ShouldBeNull_WithFullString_ThrowException()
         {
-            string? value = "value";
+            string value = "value";
 
             Action Throw = () => value.ShouldBeNull();
 
@@ -32,13 +32,13 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeNull_InValid_With_CustomMessage()
+        public void ShouldBeNull_WithFullString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is full;";
 
             try
             {
-                string? value = null;
+                string value = "value";
 
                 value.ShouldBeNull(message);
             }
@@ -49,7 +49,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeNull_Valid()
+        public void ShouldNotBeNull_WithFullString_Valid()
         {
             string value = "value";
 
@@ -59,7 +59,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }        
         
         [Fact]
-        public void String_ShouldNotBeNull_InValid()
+        public void ShouldNotBeNull_WithNullString_ThrowException()
         {
             string? value = null;
 
@@ -69,7 +69,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }        
         
         [Fact]
-        public void String_ShouldNotBeNull_InValid_With_CustomMessage()
+        public void ShouldNotBeNull_WithNullString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is null;";
 

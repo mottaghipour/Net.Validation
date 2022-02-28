@@ -12,7 +12,7 @@ namespace Valtion.Tests.Validators.StringValidators
     public class StringRequiredValidator_Tests
     {
         [Fact]
-        public void String_Required_With_ValidValue()
+        public void Required_WithValidString_Valid()
         {
             string value = "String value";
 
@@ -22,17 +22,17 @@ namespace Valtion.Tests.Validators.StringValidators
         }
 
         [Fact]
-        public void String_Required_With_NullValue_ThrowException()
+        public void Required_WithNullString_ThrowException()
         {
             string? value = null;
 
-            Action action = () => value.Required();
+            Action action = () => value?.Required();
 
             Assert.Throws<StringNullReferenceException>(action);
         }        
         
         [Fact]
-        public void String_Required_With_EmptyValue_ThrowException()
+        public void Required_WithEmptyString_ThrowException()
         {
             string? value = "";
 
@@ -42,7 +42,7 @@ namespace Valtion.Tests.Validators.StringValidators
         }  
         
         [Fact]
-        public void String_Required_With_WhiteSpaceValue_ThrowException()
+        public void Required_WithWhiteSpaceString_ThrowException()
         {
             string? value = " ";
 

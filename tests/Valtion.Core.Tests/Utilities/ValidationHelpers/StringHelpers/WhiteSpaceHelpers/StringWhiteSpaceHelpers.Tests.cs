@@ -12,9 +12,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
     public class StringWhiteSpaceHelpers_Tests
     {
         [Fact]
-        public void String_ShouldBeWhiteSpace_Valid()
+        public void ShouldBeWhiteSpace_WithWhiteSpaceString_Valid()
         {
-            string? value = " ";
+            string value = " ";
 
             string result = value.ShouldBeWhiteSpace();
 
@@ -22,9 +22,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeWhiteSpace_InValid()
+        public void ShouldBeWhiteSpace_WithFullString_ThrowException()
         {
-            string? value = "value";
+            string value = "value";
 
             Action Throw = () => value.ShouldBeWhiteSpace();
 
@@ -32,13 +32,13 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldBeWhiteSpace_InValid_With_CustomMessage()
+        public void ShouldBeWhiteSpace_WithFullString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is not white space;";
 
             try
             {
-                string? value = null;
+                string value = "value";
 
                 value.ShouldBeWhiteSpace(message);
             }
@@ -49,9 +49,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeWhiteSpace_Valid()
+        public void ShouldNotBeWhiteSpace_WithFullString_Valid()
         {
-            string? value = "String";
+            string value = "String";
 
             string result = value.ShouldNotBeWhiteSpace();
 
@@ -59,9 +59,9 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeWhiteSpace_InValid()
+        public void ShouldNotBeWhiteSpace_WithWhiteSpaceString_ThrowException()
         {
-            string? value = " ";
+            string value = " ";
 
             Action Throw = () => value.ShouldNotBeWhiteSpace();
 
@@ -69,13 +69,13 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         }
 
         [Fact]
-        public void String_ShouldNotBeWhiteSpace_InValid_With_CustomMessage()
+        public void ShouldNotBeWhiteSpace_WithWhiteSpaceString_ThrowExceptionWithCustomMessage()
         {
             string message = "String is white space;";
 
             try
             {
-                string? value = " ";
+                string value = " ";
 
                 value.ShouldNotBeWhiteSpace(message);
             }
