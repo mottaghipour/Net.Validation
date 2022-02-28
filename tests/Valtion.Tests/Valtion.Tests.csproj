@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validators\" />
+    <Folder Include="Validators\StringValidators\" />
   </ItemGroup>
 
 </Project>
