@@ -29,6 +29,16 @@ namespace Valtion.Tests.Validators.StringValidators
             Action action = () => value.Required();
 
             Assert.Throws<StringNullReferenceException>(action);
+        }        
+        
+        [Fact]
+        public void String_Required_With_EmptyValue_ThrowException()
+        {
+            string? value = "";
+
+            Action action = () => value.Required();
+
+            Assert.Throws<StringEmptyException>(action);
         }
     }
 }
