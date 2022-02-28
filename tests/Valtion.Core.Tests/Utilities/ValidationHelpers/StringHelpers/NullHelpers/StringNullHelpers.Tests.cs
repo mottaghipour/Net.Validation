@@ -42,7 +42,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
                 value.ShouldBeNull(message);
             }
-            catch (StringNullReferenceException exception)
+            catch (StringFullReferenceException exception)
             {
                 Assert.Equal(message, exception.Message);
             }

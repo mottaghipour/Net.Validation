@@ -26,7 +26,7 @@ namespace Valtion.Tests.Validators.StringValidators
         {
             string? value = null;
 
-            Action action = () => value?.Required();
+            Action action = () => value.Required();
 
             Assert.Throws<StringNullReferenceException>(action);
         }        
