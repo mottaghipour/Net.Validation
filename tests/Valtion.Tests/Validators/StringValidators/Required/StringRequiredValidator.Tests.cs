@@ -39,6 +39,16 @@ namespace Valtion.Tests.Validators.StringValidators
             Action action = () => value.Required();
 
             Assert.Throws<StringEmptyException>(action);
+        }  
+        
+        [Fact]
+        public void String_Required_With_WhiteSpaceValue_ThrowException()
+        {
+            string? value = " ";
+
+            Action action = () => value.Required();
+
+            Assert.Throws<StringWhiteSpaceException>(action);
         }
     }
 }
