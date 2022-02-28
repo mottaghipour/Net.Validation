@@ -24,7 +24,7 @@ namespace Valtion.Tests.Validators.StringValidators
         [Fact]
         public void Required_WithNullString_ThrowException()
         {
-            string? value = null;
+            string value = null;
 
             Action action = () => value.Required();
 

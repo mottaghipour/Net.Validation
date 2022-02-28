@@ -14,7 +14,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void ShouldBeNull_WithNullString_Valid()
         {
-            string? value = null;
+            string value = null;
 
             string result = value.ShouldBeNull();
 
@@ -61,7 +61,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void ShouldNotBeNull_WithNullString_ThrowException()
         {
-            string? value = null;
+            string value = null;
 
             Action Throw = () => value.ShouldNotBeNull();
 
@@ -75,7 +75,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
 
             try
             {
-                string? value = null;
+                string value = null;
 
                 value.ShouldNotBeNull(message);
             }

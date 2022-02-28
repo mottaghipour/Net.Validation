@@ -14,7 +14,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void ShouldBeEmpty_WithEmptyString_Valid()
         {
-            string? value = "";
+            string value = "";
 
             string result = value.ShouldBeEmpty();
 
