@@ -51,7 +51,7 @@ namespace Valtion.Core.Tests.Utilities.ValidationHelpers.StringHelpers
         [Fact]
         public void ShouldNotBeWhiteSpace_WithFullString_Valid()
         {
-            string value = "String";
+            string value = "value";
 
             string result = value.ShouldNotBeWhiteSpace();
 
