@@ -34,7 +34,7 @@ namespace Valtion.Tests.Validators.StringValidators
         [Fact]
         public void Required_WithEmptyString_ThrowException()
         {
-            string? value = "";
+            string value = "";
 
             Action action = () => value.Required();
 
@@ -44,7 +44,7 @@ namespace Valtion.Tests.Validators.StringValidators
         [Fact]
         public void Required_WithWhiteSpaceString_ThrowException()
         {
-            string? value = " ";
+            string value = " ";
 
             Action action = () => value.Required();
 
