@@ -23,4 +23,8 @@
     <ProjectReference Include="..\..\src\Valtion\Valtion.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validators\StringValidators\MaxLength\" />
+  </ItemGroup>
+
 </Project>
