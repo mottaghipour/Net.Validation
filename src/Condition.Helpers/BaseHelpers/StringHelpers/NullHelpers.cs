@@ -5,7 +5,7 @@ namespace Nilgon.Net.Condition.Helpers
 	public static partial class StringHelpers
 	{
 		/// <summary>
-        /// IsNull
+        /// IsNull helper
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
