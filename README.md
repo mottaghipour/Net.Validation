@@ -1,2 +1,2 @@
-# Valtion
-The .NET validation library
+# .NET condition helper
+.NET condition helper extensions
