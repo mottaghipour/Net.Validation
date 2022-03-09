@@ -1,4 +1,5 @@
 ﻿using System;
+using Nilgon.Net.Condition.Helpers;
 using Xunit;
 
 namespace Condition.Helpers.Tests.ConditionHelpers.StringConditionHelpers
@@ -8,21 +9,21 @@ namespace Condition.Helpers.Tests.ConditionHelpers.StringConditionHelpers
         [Fact]
         public void IsNull_WithNullValue_ReturnTrue()
         {
-            //string? value = null;
+            string? value = null;
 
-            //bool result = value.IsNull();
+            bool result = value.IsNull();
 
-            //Assert.True(result);
+            Assert.True(result);
         }
 
         [Fact]
         public void IsNull_WithFullValue_ReturnFalse()
         {
-            //string? value = null;
+            string? value = "Full value";
 
-            //bool result = value.IsNull();
+            bool result = value.IsNull();
 
-            //Assert.False(result);
+            Assert.False(result);
         }
     }
 }
