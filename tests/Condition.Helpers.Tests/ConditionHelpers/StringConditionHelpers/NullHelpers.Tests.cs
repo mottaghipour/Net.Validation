@@ -25,5 +25,25 @@ namespace Condition.Helpers.Tests.ConditionHelpers.StringConditionHelpers
 
             Assert.False(result);
         }
+
+        [Fact]
+        public void IsNotNull_WithNullValue_ReturnFalse()
+        {
+            //string? value = null;
+
+            //bool result = value.IsNotNull();
+
+            //Assert.True(result);
+        }
+
+        [Fact]
+        public void IsNotNull_WithFullValue_ReturnTrue()
+        {
+            //string? value = "Full value";
+
+            //bool result = value.IsNotNull();
+
+            //Assert.False(result);
+        }
     }
 }
