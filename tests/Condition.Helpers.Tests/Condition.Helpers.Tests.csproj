@@ -24,4 +24,12 @@
     <ProjectReference Include="..\..\src\Condition.Helpers\Condition.Helpers.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ConditionHelpers\" />
+    <None Remove="ConditionHelpers\StringConditionHelpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConditionHelpers\" />
+    <Folder Include="ConditionHelpers\StringConditionHelpers\" />
+  </ItemGroup>
 </Project>
