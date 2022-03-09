@@ -8,5 +8,10 @@ namespace Nilgon.Net.Condition.Helpers
         {
             return value == null;
         }
+
+        public static bool IsNotNull(this string value)
+        {
+            return value != null;
+        }
     }
 }
