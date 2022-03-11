@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -27,9 +26,5 @@
   <ItemGroup>
     <None Remove="ConditionHelpers\" />
     <None Remove="ConditionHelpers\StringConditionHelpers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ConditionHelpers\" />
-    <Folder Include="ConditionHelpers\StringHelpers\" />
   </ItemGroup>
 </Project>
