@@ -30,6 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ConditionHelpers\" />
-    <Folder Include="ConditionHelpers\StringConditionHelpers\" />
+    <Folder Include="ConditionHelpers\StringHelpers\" />
   </ItemGroup>
 </Project>
