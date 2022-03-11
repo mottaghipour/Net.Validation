@@ -8,8 +8,4 @@
     <None Remove="ConditionHelpers\" />
     <None Remove="ConditionHelpers\StringConditionHelpers\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ConditionHelpers\" />
-    <Folder Include="ConditionHelpers\StringHelpers\" />
-  </ItemGroup>
 </Project>
