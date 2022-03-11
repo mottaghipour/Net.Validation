@@ -13,7 +13,6 @@ namespace Nilgon.Net.Condition.Helpers
         /// <returns><see langword="true"/> if the <paramref name="value"/> parameter is <see langword="null"/>. otherwise, <see langword="false"/>.</returns>
         public static bool IsNull(this string value)
         {
-            string.IsNullOrEmpty(value);
             return value == null;
         }
     }
