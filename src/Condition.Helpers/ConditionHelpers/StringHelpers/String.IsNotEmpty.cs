@@ -7,7 +7,6 @@
         /// </summary>
         /// <param name="value"></param>
         /// <returns><see langword="true"/> if the <paramref name="value"/> parameter is not empty string(""). otherwise, <see langword="false"/>.</returns>
-
         public static bool IsNotEmpty(this string value)
         {
 			return value != string.Empty;
