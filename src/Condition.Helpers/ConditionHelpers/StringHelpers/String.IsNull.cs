@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Nilgon.Net.Condition.Helpers
+﻿namespace Nilgon.Net.Condition.Helpers
 {
     public static partial class StringConditionHelpers
     {
