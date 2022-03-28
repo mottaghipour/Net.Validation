@@ -7,31 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5080F2D-7F0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C61A315D-8CF4-455E-9C2B-C22C62FE933E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Condition.Helpers", "src\Condition.Helpers\Condition.Helpers.csproj", "{2524E971-4354-4EE5-965A-88B332209F2E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Condition.Helpers.Tests", "tests\Condition.Helpers.Tests\Condition.Helpers.Tests.csproj", "{318B7F95-6873-4C74-99CA-059B55A4A73A}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2524E971-4354-4EE5-965A-88B332209F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2524E971-4354-4EE5-965A-88B332209F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2524E971-4354-4EE5-965A-88B332209F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2524E971-4354-4EE5-965A-88B332209F2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{318B7F95-6873-4C74-99CA-059B55A4A73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{318B7F95-6873-4C74-99CA-059B55A4A73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{318B7F95-6873-4C74-99CA-059B55A4A73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{318B7F95-6873-4C74-99CA-059B55A4A73A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{2524E971-4354-4EE5-965A-88B332209F2E} = {B5080F2D-7F07-41E3-84BD-FE326CC89621}
-		{318B7F95-6873-4C74-99CA-059B55A4A73A} = {C61A315D-8CF4-455E-9C2B-C22C62FE933E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18032B85-E82F-4E5C-BD2F-FFB5E281A8E9}
