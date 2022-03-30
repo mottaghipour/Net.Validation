@@ -4,11 +4,13 @@ namespace Nilgon.Validation.Helpers
 {
     public static partial class StringValidationHelpers
     {
-        public static string Required(this string value)
+        public static string Required(this string value, string? message = null)
         {
             if (string.IsNullOrWhiteSpace(value))
-                throw new NilgonValidationException<string>(); 
-
+            {
+                NilgonValidationException.Throw(message);
+            }
+            
             return value;
         }
     }
