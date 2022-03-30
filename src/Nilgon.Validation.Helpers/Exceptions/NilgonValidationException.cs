@@ -2,10 +2,25 @@
 {
     public class NilgonValidationException : Exception
     {
-        public NilgonValidationException() : base() { }
+        private NilgonValidationException() : base() { }
 
-        public NilgonValidationException(string? message) : base(message) { }
+        private NilgonValidationException(string? message) : base(message) { }
 
-        public NilgonValidationException(string? message, Exception? innerException) : base(message, innerException) { }
+        private NilgonValidationException(string? message, Exception? innerException) : base(message, innerException) { }
+
+        public static string Throw()
+        {
+            throw new NilgonValidationException();
+        }
+
+        public static string Throw(string? message)
+        {
+            throw new NilgonValidationException(message);
+        }
+
+        public static string Throw(string? message, Exception? innerException)
+        {
+            throw new NilgonValidationException(message, innerException);
+        }
     }
 }
