@@ -1,6 +1,7 @@
 ﻿namespace Nilgon.Validation.Helpers.Exceptions
 {
-    public class NilgonValidationException : Exception
+    [Serializable]
+    public sealed class NilgonValidationException : Exception
     {
         private NilgonValidationException() : base() { }
 
