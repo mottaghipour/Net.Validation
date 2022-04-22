@@ -2,7 +2,7 @@
 
 namespace Nilgon.Validation.Helpers.Utilities
 {
-    internal static class ExceptionManager
+    internal static class ExceptionLauncher
     {
         /// <summary>
         ///    Throws the specified exception.
