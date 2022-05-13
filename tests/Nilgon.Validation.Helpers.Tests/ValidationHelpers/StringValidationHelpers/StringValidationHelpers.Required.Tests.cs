@@ -1,6 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Xunit;
-using Nilgon.Validation.Helpers.Exceptions;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelpers
 {
@@ -23,7 +23,7 @@ namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelp
 
             Action action = () => value.Required();
 
-            Assert.Throws<NilgonValidationException>(action);
+            Assert.Throws<ValidationException>(action);
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelp
 
             Action action = () => value.Required();
 
-            Assert.Throws<NilgonValidationException>(action);
+            Assert.Throws<ValidationException>(action);
         }
 
         [Fact]
@@ -43,7 +43,7 @@ namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelp
 
             Action action = () => value.Required();
 
-            Assert.Throws<NilgonValidationException>(action);
+            Assert.Throws<ValidationException>(action);
         }
     }
 }
