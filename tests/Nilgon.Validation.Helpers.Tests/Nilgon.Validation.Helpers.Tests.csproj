@@ -27,10 +27,12 @@
     <None Remove="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.RequiredHelpers\" />
     <None Remove="ValidationHelpers\CommonValidationHelpers\" />
     <None Remove="ValidationHelpers\CommonValidationHelpers\CommonValidationHelpers.NullHelpers\" />
+    <None Remove="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.EmptyHelpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.RequiredHelpers\" />
     <Folder Include="ValidationHelpers\CommonValidationHelpers\" />
     <Folder Include="ValidationHelpers\CommonValidationHelpers\CommonValidationHelpers.NullHelpers\" />
+    <Folder Include="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.EmptyHelpers\" />
   </ItemGroup>
 </Project>
