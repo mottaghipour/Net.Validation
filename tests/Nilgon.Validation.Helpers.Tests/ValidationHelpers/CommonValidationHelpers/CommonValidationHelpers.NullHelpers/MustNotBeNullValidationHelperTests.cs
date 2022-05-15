@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Xunit;
+using System;
 using System.ComponentModel.DataAnnotations;
-using Xunit;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.CommonValidationHelpers.NullHelpers;
 
-public class MustNotBeNull_Validation_Helper_Tests
+public sealed class MustNotBeNull_Validation_Helper_Tests
 {
     [Fact]
     public void MustNotBeNull_ReturnsValue_WhenObjectIsNotNull()

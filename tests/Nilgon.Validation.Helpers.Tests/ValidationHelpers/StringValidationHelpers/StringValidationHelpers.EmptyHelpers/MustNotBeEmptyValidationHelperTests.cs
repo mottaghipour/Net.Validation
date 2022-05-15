@@ -1,5 +1,5 @@
-using System;
 using Xunit;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelpers.EmptyHelpers;
@@ -37,7 +37,7 @@ public sealed class MustNotBeEmpty_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustNotBeEmpty_ThrowException_WhenStringIsEmpty()
+    public void MustNotBeEmpty_ThrowsException_WhenStringIsEmpty()
     {
         string stringToTest = string.Empty;
 

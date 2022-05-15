@@ -1,5 +1,5 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.CommonValidationHelpers.NullHelpers;

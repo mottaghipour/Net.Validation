@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Xunit;
+using System;
 using System.ComponentModel.DataAnnotations;
-using Xunit;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelpers.RequiredHelpers;
 
@@ -17,7 +17,7 @@ public sealed class MustBeRequired_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeRequired_ThrowException_WhenStringIsNull()
+    public void MustBeRequired_ThrowsException_WhenStringIsNull()
     {
         string stringToTest = null;
 
@@ -27,7 +27,7 @@ public sealed class MustBeRequired_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeRequired_ThrowException_WhenStringIsEmpty()
+    public void MustBeRequired_ThrowsException_WhenStringIsEmpty()
     {
         string stringToTest = "";
 
@@ -37,7 +37,7 @@ public sealed class MustBeRequired_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeRequired_ThrowException_WhenStringIsWhiteSpace()
+    public void MustBeRequired_ThrowsException_WhenStringIsWhiteSpace()
     {
         string stringToTest = " ";
 

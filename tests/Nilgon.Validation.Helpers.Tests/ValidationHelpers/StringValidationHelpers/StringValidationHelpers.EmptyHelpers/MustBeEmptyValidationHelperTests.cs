@@ -1,5 +1,5 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Nilgon.Validation.Helpers.Tests.ValidationHelpers.StringValidationHelpers.EmptyHelpers;
@@ -17,7 +17,7 @@ public sealed class MustBeEmpty_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeEmpty_ThrowException_WhenStringIsNull()
+    public void MustBeEmpty_ThrowsException_WhenStringIsNull()
     {
         string stringToTest = null;
 
@@ -27,7 +27,7 @@ public sealed class MustBeEmpty_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeEmpty_ThrowException_WhenStringIsWhiteSpace()
+    public void MustBeEmpty_ThrowsException_WhenStringIsWhiteSpace()
     {
         string stringToTest = " ";
 
@@ -37,7 +37,7 @@ public sealed class MustBeEmpty_Validation_Helper_Tests
     }
 
     [Fact]
-    public void MustBeEmpty_ThrowException_WhenStringIsFull()
+    public void MustBeEmpty_ThrowsException_WhenStringIsFull()
     {
         string stringToTest = "test";
 
