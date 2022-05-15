@@ -10,4 +10,10 @@
     <PackageReference Include="Nilgon.Condition.Helpers" Version="1.0.0-preview.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.NullOrEmptyHelpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ValidationHelpers\StringValidationHelpers\StringValidationHelpers.NullOrEmptyHelpers.cs" />
+  </ItemGroup>
 </Project>
